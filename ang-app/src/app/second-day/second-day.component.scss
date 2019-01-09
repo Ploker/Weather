@@ -1,0 +1,42 @@
+$whiteBg: white;
+$black: #060401;
+$blackBg: #121113;
+
+
+.info-card{
+    display: grid;
+    grid-template-rows: 55px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 23px;
+    font-weight: 500;
+    // border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover{
+        // border-color: $blackBg;
+        background: $blackBg;
+        color: white;
+        box-shadow: 0px 3px 19px black;
+    }
+    &__wrap{
+        display: flex;
+        padding: 0 25px;
+    }
+    &__matric{
+        font-size: 20px
+    }
+    &__icon{
+        padding-top: 23px;
+        margin-left: 15%;
+    }
+}
+.info-card-active{
+    background: $blackBg;
+    color: white;
+    box-shadow: 0px 3px 19px black;
+}
+

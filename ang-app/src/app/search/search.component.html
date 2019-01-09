@@ -1,0 +1,21 @@
+<div class="finder-card" >
+  <!-- <form class="find-city" > -->
+    <!-- <p-autoComplete formControlName="city" [suggestions]="city" (completeMethod)="search($event)"></p-autoComplete> -->
+    <p-autoComplete [inputStyleClass]="g" [(ngModel)]="city.city" [suggestions]="cities" (onSelect)="onS($event)" (completeMethod)="getCityByName()" [style]="{'width':'100%'}" [inputStyle]="{'width':'100%'}"
+        placeholder="Київ" field="fullName" [minLength]="1"></p-autoComplete>
+    <!-- <label class="find-city__label" for="">Пошук міста</label> -->
+    <!-- <input class="find-city__input" [(ngModel)]="city" (change)="getCityByName()" [ngModelOptions]="{standalone: true}" type="text" placeholder="Київ"> -->
+    <!-- <button class="find-city__submit" type="submit" (submit)="getWeatherByCity()" >Показати</button> -->
+    <!-- <input list="сitiesi" name="cityi" class="find-city__input" [(ngModel)]="city" (input)="getCityByName()"  placeholder="Київ">
+    <datalist id="сitiesi" >
+      <option *ngFor="let c of citymass" [value]="c">
+      <option value="kkk">
+
+    </datalist> -->
+
+  <!-- </form> -->
+  <!-- <li *ngFor="let hero of cities">
+      {{ hero }}
+    </li> -->
+  
+</div>

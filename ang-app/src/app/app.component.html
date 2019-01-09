@@ -1,0 +1,30 @@
+<div class="container">
+  <app-search></app-search>
+  <div class="cards" >
+    <div class="main-card" *ngIf="weather.city != ''">
+      <p class="city textCenter">{{weather.city}}, {{weather.country}}</p>
+      <div class="main-info">
+        <span class="main-info__icon">
+          <i class="fas fa-cloud fa-7x"></i>
+        </span>
+        <h1 class="main-info__matric textCenter" >{{weather.data[0].data[0].temp}}°</h1>
+        <h2 class="main-info__description textCenter firstUp">{{weather.data[0].data[0].weatherDescription}}</h2>
+      </div>
+      <div class="cards-today">
+        <div class="info-card" *ngFor="let w of weather.data[0].data">
+          <p class="info-card__time">{{w.time}}</p>
+          <p class="info-card__matric">{{w.temp}}°</p>
+          <span class="info-card__icon">
+            <i class="fas fa-cloud-showers-heavy"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="second-cards" >
+      <app-second-day ></app-second-day>
+    </div>
+  </div>
+  
+</div>
+
+<router-outlet></router-outlet>

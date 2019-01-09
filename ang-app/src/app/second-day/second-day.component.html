@@ -1,0 +1,12 @@
+<!-- <template [hidden]="hidden()"> -->
+  <div class="info-card" *ngFor="let w of weather.data" [ngClass]="{'info-card-active': checkActive(w.id)}" (click)="onSelectDay(w.id)">
+    <p class="info-card__day textCenter firstUp">{{w.dateFormat}}</p>
+    <div class="info-card__wrap">
+      <p class="info-card__matric">min({{w.minTemp}}°) max({{w.maxTemp}})</p>
+      <span class="info-card__icon">
+        <i class="fas fa-cloud"></i>
+      </span>
+    </div>
+  </div>
+<!-- </template> -->
+

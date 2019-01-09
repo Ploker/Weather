@@ -1,0 +1,57 @@
+
+$whiteBg: white;
+$black: #060401;
+$blackBg: #121113;
+
+
+.container{
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    color: $black;
+}
+
+.cards{
+    display: flex;
+}
+
+.main-card{
+    width: 50%;
+}
+
+.second-cards{
+    width: 50%;
+}
+.city{
+    // text-align: center;
+}
+.main-info{
+    margin-top: 20px;
+    &__matric{
+        // text-align: center;
+        font-size: 70px;
+    }
+    &__icon{
+        margin-left: 200px;
+        i{
+            text-shadow: 0px 5px 60px darkgrey;
+        }
+    }
+}
+.cards-today .info-card{
+    font-size: 23px;
+    font-weight: 500;
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+    &__time{
+        // margin-right: 30px;
+    }
+    &__icon{
+        font-size: 32px;
+        padding-top: 24px;
+        text-align: center;
+    }
+}
